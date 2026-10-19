@@ -7,15 +7,6 @@ toggle.addEventListener("click", function () {
   toggle.setAttribute("aria-expanded", open);
 });
 
-// "More" dropdown on tap; close it when tapping elsewhere
-var more = document.querySelector(".more");
-more.querySelector("button").addEventListener("click", function () {
-  more.classList.toggle("open");
-});
-document.addEventListener("click", function (e) {
-  if (!more.contains(e.target)) more.classList.remove("open");
-});
-
 // Header gets a shadow once you scroll
 var header = document.querySelector(".site-header");
 function onScroll() { header.classList.toggle("scrolled", window.scrollY > 10); }
