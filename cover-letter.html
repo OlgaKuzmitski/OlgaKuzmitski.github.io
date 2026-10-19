@@ -4,22 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cover Letter | Your Name</title>
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="top">
     <a class="brand" href="index.html">
       <span class="brand-name">Your Name</span>
       <span class="brand-tag">Labor and Delivery, RN</span>
     </a>
-    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav">
-      <a href="index.html">ABOUT ME</a>
+      <a href="index.html">About Me</a>
       <a href="cover-letter.html" class="active">Cover Letter</a>
-      <a href="resume.html">RESUME</a>
+      <a href="resume.html">Resume</a>
       <div class="more">
         <button>More</button>
         <div class="dropdown"><div class="dropdown-inner">
@@ -30,27 +31,57 @@
     </nav>
   </header>
 
-  <main class="beige-section">
-    <h1 class="page-title">Cover Letter</h1>
-    <div class="card cover-card">
-      <div class="letter">
-        <h2>Your Name BSN, RN</h2>
-        <div class="heavy">Labor and Delivery, RN</div>
-        <p class="heavy">DEAR HIRING MANAGER,</p>
-        <p class="heavy">My name is Your Name. I am a Licensed Registered Nurse in New Jersey. I am a recent graduate of William Paterson Bachelor in Science of Nursing. I’m excited to apply for the position of Registered Nurse as advertised on your website.</p>
-        <p class="heavy">During my time as a Registered Nurse at Saint Peter’s Hospital, I’ve dedicated my time to my growth in the specialty of Labor and Delivery on a high risk 15 bed unit. This trained me to respond to rapid response calls/codes and to care for pregnant patients in critical conditions as well as support the laboring mother and her fetus throughout labor. My commitment and dedication to serving my patients is always unshakable.</p>
-        <p class="heavy">I am ready to work and continue my growth. I have wanted to work in this field for as long as I can remember. It would be more than an honor to bring care to the women and childrens population. I see a chance to care for the most valuable ages of our population, newborns as well as first time mothers/parents. I firmly believe that my relationship with your company will be of mutual benefit. While it’s a guarantee I will offer a positive impact on the quality of health delivery in your hospital, I will also get the chance to develop my career entirely. I am highly optimistic and look forward to hearing back from you.</p>
-        <p class="heavy">Please review my attached resume. Thank you for your time and consideration.</p>
+  <main>
+    <section class="page-hero">
+      <div class="blob blob-blue"></div>
+      <div class="blob blob-violet"></div>
+      <div class="container">
+        <div class="eyebrow reveal">Why I'm a great fit</div>
+        <h1 class="reveal" style="--d:.1s">Cover <span class="grad-text">Letter</span></h1>
       </div>
-      <img class="art" src="images/cover-letter.jpg" alt="">
-    </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="letter-card with-art reveal">
+          <div class="letter">
+            <h2>Your Name BSN, RN</h2>
+            <div class="role-line">Labor and Delivery, RN</div>
+            <p class="salutation">Dear Hiring Manager,</p>
+            <p>My name is Your Name. I am a Licensed Registered Nurse in New Jersey. I am a recent graduate of William Paterson Bachelor in Science of Nursing. I’m excited to apply for the position of Registered Nurse as advertised on your website.</p>
+            <p>During my time as a Registered Nurse at Saint Peter’s Hospital, I’ve dedicated my time to my growth in the specialty of Labor and Delivery on a high risk 15 bed unit. This trained me to respond to rapid response calls/codes and to care for pregnant patients in critical conditions as well as support the laboring mother and her fetus throughout labor. My commitment and dedication to serving my patients is always unshakable.</p>
+            <p>I am ready to work and continue my growth. I have wanted to work in this field for as long as I can remember. It would be more than an honor to bring care to the women and childrens population. I see a chance to care for the most valuable ages of our population, newborns as well as first time mothers/parents. I firmly believe that my relationship with your company will be of mutual benefit. While it’s a guarantee I will offer a positive impact on the quality of health delivery in your hospital, I will also get the chance to develop my career entirely. I am highly optimistic and look forward to hearing back from you.</p>
+            <p>Please review my attached resume. Thank you for your time and consideration.</p>
+            <a class="btn" href="resume.html" style="margin-top:14px">View Resume <span class="arrow">→</span></a>
+          </div>
+          <div class="art-col">
+            <img class="art" src="images/cover-letter.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div>© 2026 by Your Name.</div>
-    <div class="footer-contact">
-      <div><strong>Call</strong><a href="tel:5555555555">555-555-5555</a></div>
-      <div><strong>Write</strong><a href="mailto:your.email@example.com">your.email@example.com</a></div>
+    <div class="blob blob-blue"></div>
+    <div class="container">
+      <div class="footer-top">
+        <h2>Let's <span class="light">connect.</span></h2>
+        <div class="contact-cards">
+          <a class="contact-card" href="tel:5555555555">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span>
+            <span><span class="label">Call</span><span class="value">555-555-5555</span></span>
+          </a>
+          <a class="contact-card" href="mailto:your.email@example.com">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.4 2L12 12.2 19.6 7zM20 8.4l-7.4 5.1a1 1 0 0 1-1.2 0L4 8.4V17h16z"/></svg></span>
+            <span><span class="label">Write</span><span class="value">your.email@example.com</span></span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 by Your Name.</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
   </footer>
   <script src="script.js"></script>

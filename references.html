@@ -4,22 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>References | Your Name</title>
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="top">
     <a class="brand" href="index.html">
       <span class="brand-name">Your Name</span>
       <span class="brand-tag">Labor and Delivery, RN</span>
     </a>
-    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav">
-      <a href="index.html">ABOUT ME</a>
+      <a href="index.html">About Me</a>
       <a href="cover-letter.html">Cover Letter</a>
-      <a href="resume.html">RESUME</a>
+      <a href="resume.html">Resume</a>
       <div class="more">
         <button class="active">More</button>
         <div class="dropdown"><div class="dropdown-inner">
@@ -30,26 +31,116 @@
     </nav>
   </header>
 
-  <main class="refs">
-    <h1>References</h1>
-    <div>
-      <img src="images/references.jpg" alt="">
-      <div class="ref-list heavy">
-        <div class="ref">Reference Name, Credentials<br>Job Title<br>Workplace<br>555.555.5555/<a href="mailto:reference@example.com">reference@example.com</a></div>
-        <div class="ref">Reference Name, Credentials<br>Job Title<br>Workplace<br>555.555.5555/<a href="mailto:reference@example.com">reference@example.com</a></div>
-        <div class="ref">Reference Name, Credentials<br>Job Title<br>Workplace<br>555.555.5555/<a href="mailto:reference@example.com">reference@example.com</a></div>
-        <div class="ref">Reference Name, Credentials<br>Job Title<br>Workplace<br>555.555.5555/<a href="mailto:reference@example.com">reference@example.com</a></div>
-        <div class="ref">Reference Name, Credentials<br>Job Title<br>Workplace<br>555.555.5555/<a href="mailto:reference@example.com">reference@example.com</a></div>
-        <div class="ref">Reference Name, Credentials<br>Job Title<br>Workplace<br>555.555.5555/<a href="mailto:reference@example.com">reference@example.com</a></div>
+  <main>
+    <section class="page-hero">
+      <div class="blob blob-blue"></div>
+      <div class="blob blob-violet"></div>
+      <div class="container">
+        <div class="eyebrow reveal">Professional References</div>
+        <h1 class="reveal" style="--d:.1s">Refer<span class="grad-text">ences</span></h1>
       </div>
-    </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="refs-banner reveal">
+          <img src="images/references.jpg" alt="">
+          <p>People I've worked with, learned from, and cared for patients alongside.</p>
+        </div>
+
+        <!-- One card per reference. Copy a whole <div class="ref-card">...</div> block to add another. -->
+        <div class="ref-grid">
+          <div class="ref-card reveal">
+            <div class="ref-top">
+              <div class="avatar"><svg viewBox="0 0 24 24"><path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 2c-4.4 0-8 2.5-8 5.5V21h16v-1.5c0-3-3.6-5.5-8-5.5z"/></svg></div>
+              <div><div class="ref-name">Reference Name, Credentials</div><div class="ref-title">Job Title</div></div>
+            </div>
+            <div class="ref-org">Workplace</div>
+            <div class="ref-contact">
+              <a href="tel:5555555555"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>555.555.5555</a>
+              <a href="mailto:reference@example.com"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.4 2L12 12.2 19.6 7zM20 8.4l-7.4 5.1a1 1 0 0 1-1.2 0L4 8.4V17h16z"/></svg>reference@example.com</a>
+            </div>
+          </div>
+          <div class="ref-card reveal" style="--d:.08s">
+            <div class="ref-top">
+              <div class="avatar"><svg viewBox="0 0 24 24"><path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 2c-4.4 0-8 2.5-8 5.5V21h16v-1.5c0-3-3.6-5.5-8-5.5z"/></svg></div>
+              <div><div class="ref-name">Reference Name, Credentials</div><div class="ref-title">Job Title</div></div>
+            </div>
+            <div class="ref-org">Workplace</div>
+            <div class="ref-contact">
+              <a href="tel:5555555555"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>555.555.5555</a>
+              <a href="mailto:reference@example.com"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.4 2L12 12.2 19.6 7zM20 8.4l-7.4 5.1a1 1 0 0 1-1.2 0L4 8.4V17h16z"/></svg>reference@example.com</a>
+            </div>
+          </div>
+          <div class="ref-card reveal" style="--d:.16s">
+            <div class="ref-top">
+              <div class="avatar"><svg viewBox="0 0 24 24"><path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 2c-4.4 0-8 2.5-8 5.5V21h16v-1.5c0-3-3.6-5.5-8-5.5z"/></svg></div>
+              <div><div class="ref-name">Reference Name, Credentials</div><div class="ref-title">Job Title</div></div>
+            </div>
+            <div class="ref-org">Workplace</div>
+            <div class="ref-contact">
+              <a href="tel:5555555555"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>555.555.5555</a>
+              <a href="mailto:reference@example.com"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.4 2L12 12.2 19.6 7zM20 8.4l-7.4 5.1a1 1 0 0 1-1.2 0L4 8.4V17h16z"/></svg>reference@example.com</a>
+            </div>
+          </div>
+          <div class="ref-card reveal">
+            <div class="ref-top">
+              <div class="avatar"><svg viewBox="0 0 24 24"><path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 2c-4.4 0-8 2.5-8 5.5V21h16v-1.5c0-3-3.6-5.5-8-5.5z"/></svg></div>
+              <div><div class="ref-name">Reference Name, Credentials</div><div class="ref-title">Job Title</div></div>
+            </div>
+            <div class="ref-org">Workplace</div>
+            <div class="ref-contact">
+              <a href="tel:5555555555"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>555.555.5555</a>
+              <a href="mailto:reference@example.com"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.4 2L12 12.2 19.6 7zM20 8.4l-7.4 5.1a1 1 0 0 1-1.2 0L4 8.4V17h16z"/></svg>reference@example.com</a>
+            </div>
+          </div>
+          <div class="ref-card reveal" style="--d:.08s">
+            <div class="ref-top">
+              <div class="avatar"><svg viewBox="0 0 24 24"><path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 2c-4.4 0-8 2.5-8 5.5V21h16v-1.5c0-3-3.6-5.5-8-5.5z"/></svg></div>
+              <div><div class="ref-name">Reference Name, Credentials</div><div class="ref-title">Job Title</div></div>
+            </div>
+            <div class="ref-org">Workplace</div>
+            <div class="ref-contact">
+              <a href="tel:5555555555"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>555.555.5555</a>
+              <a href="mailto:reference@example.com"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.4 2L12 12.2 19.6 7zM20 8.4l-7.4 5.1a1 1 0 0 1-1.2 0L4 8.4V17h16z"/></svg>reference@example.com</a>
+            </div>
+          </div>
+          <div class="ref-card reveal" style="--d:.16s">
+            <div class="ref-top">
+              <div class="avatar"><svg viewBox="0 0 24 24"><path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 2c-4.4 0-8 2.5-8 5.5V21h16v-1.5c0-3-3.6-5.5-8-5.5z"/></svg></div>
+              <div><div class="ref-name">Reference Name, Credentials</div><div class="ref-title">Job Title</div></div>
+            </div>
+            <div class="ref-org">Workplace</div>
+            <div class="ref-contact">
+              <a href="tel:5555555555"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>555.555.5555</a>
+              <a href="mailto:reference@example.com"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.4 2L12 12.2 19.6 7zM20 8.4l-7.4 5.1a1 1 0 0 1-1.2 0L4 8.4V17h16z"/></svg>reference@example.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div>© 2026 by Your Name.</div>
-    <div class="footer-contact">
-      <div><strong>Call</strong><a href="tel:5555555555">555-555-5555</a></div>
-      <div><strong>Write</strong><a href="mailto:your.email@example.com">your.email@example.com</a></div>
+    <div class="blob blob-blue"></div>
+    <div class="container">
+      <div class="footer-top">
+        <h2>Let's <span class="light">connect.</span></h2>
+        <div class="contact-cards">
+          <a class="contact-card" href="tel:5555555555">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span>
+            <span><span class="label">Call</span><span class="value">555-555-5555</span></span>
+          </a>
+          <a class="contact-card" href="mailto:your.email@example.com">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.4 2L12 12.2 19.6 7zM20 8.4l-7.4 5.1a1 1 0 0 1-1.2 0L4 8.4V17h16z"/></svg></span>
+            <span><span class="label">Write</span><span class="value">your.email@example.com</span></span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 by Your Name.</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
   </footer>
   <script src="script.js"></script>

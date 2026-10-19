@@ -4,22 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Reference Request | Your Name</title>
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="top">
     <a class="brand" href="index.html">
       <span class="brand-name">Your Name</span>
       <span class="brand-tag">Labor and Delivery, RN</span>
     </a>
-    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav">
-      <a href="index.html">ABOUT ME</a>
+      <a href="index.html">About Me</a>
       <a href="cover-letter.html">Cover Letter</a>
-      <a href="resume.html">RESUME</a>
+      <a href="resume.html">Resume</a>
       <div class="more">
         <button class="active">More</button>
         <div class="dropdown"><div class="dropdown-inner">
@@ -30,19 +31,51 @@
     </nav>
   </header>
 
-  <main class="request">
-    <h1>Your Name BSN, RN</h1>
-    <p class="heavy">Dear [Recipient Name, Credentials],</p>
-    <p class="heavy">The intent of this letter is to kindly request a letter of recommendation. In addition to completing my undergraduate education at William Paterson University, I have earned my RN license after previously passing the NCLEX examination. I am currently seeking to move up the ladder from my Labor and Deliver, RN position at Saint Peter’s University. It is my ambition to begin this journey as a nurse manager of Labor and Delivery. Your class made me realize what an impact leadership can make on a unit and what a difference you can bring with new mindsets and ideas for staff and patients together. You allowed me to believe in myself and molded me with qualities and skills needed to fill this position. I have attached a resume that may help you to formulate the letter of recommendation. Please address the letter to the following individual:<br>Director of Labor and Delivery</p>
-    <p class="heavy">Thank you for taking the time to read this letter and I look forward to hearing from you.</p>
-    <p class="heavy">Sincerely, Your Name&nbsp; BSN, RN</p>
+  <main>
+    <section class="page-hero">
+      <div class="blob blob-blue"></div>
+      <div class="blob blob-violet"></div>
+      <div class="container">
+        <div class="eyebrow reveal">Reference Request</div>
+        <h1 class="reveal" style="--d:.1s">Your Name <span class="grad-text">BSN, RN</span></h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="letter-card narrow reveal">
+          <div class="letter">
+            <p class="salutation">Dear [Recipient Name, Credentials],</p>
+            <p>The intent of this letter is to kindly request a letter of recommendation. In addition to completing my undergraduate education at William Paterson University, I have earned my RN license after previously passing the NCLEX examination. I am currently seeking to move up the ladder from my Labor and Deliver, RN position at Saint Peter’s University. It is my ambition to begin this journey as a nurse manager of Labor and Delivery. Your class made me realize what an impact leadership can make on a unit and what a difference you can bring with new mindsets and ideas for staff and patients together. You allowed me to believe in myself and molded me with qualities and skills needed to fill this position. I have attached a resume that may help you to formulate the letter of recommendation. Please address the letter to the following individual:</p>
+            <div class="callout">Director of Labor and Delivery</div>
+            <p>Thank you for taking the time to read this letter and I look forward to hearing from you.</p>
+            <p class="signature">Sincerely,<br>Your Name BSN, RN</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div>© 2026 by Your Name.</div>
-    <div class="footer-contact">
-      <div><strong>Call</strong><a href="tel:5555555555">555-555-5555</a></div>
-      <div><strong>Write</strong><a href="mailto:your.email@example.com">your.email@example.com</a></div>
+    <div class="blob blob-blue"></div>
+    <div class="container">
+      <div class="footer-top">
+        <h2>Let's <span class="light">connect.</span></h2>
+        <div class="contact-cards">
+          <a class="contact-card" href="tel:5555555555">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span>
+            <span><span class="label">Call</span><span class="value">555-555-5555</span></span>
+          </a>
+          <a class="contact-card" href="mailto:your.email@example.com">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.4 2L12 12.2 19.6 7zM20 8.4l-7.4 5.1a1 1 0 0 1-1.2 0L4 8.4V17h16z"/></svg></span>
+            <span><span class="label">Write</span><span class="value">your.email@example.com</span></span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 by Your Name.</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
   </footer>
   <script src="script.js"></script>
