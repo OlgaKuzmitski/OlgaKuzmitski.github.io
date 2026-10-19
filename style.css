@@ -240,6 +240,8 @@ img { display: block; max-width: 100%; }
 .art-col { position: relative; align-self: center; }
 .art-col::before { content: ""; position: absolute; inset: -16px; border-radius: 50%; border: 2px dashed #b9cbff; }
 .art { width: 100%; aspect-ratio: 300 / 380; border-radius: 50%; object-fit: cover; box-shadow: var(--shadow-lg); }
+/* Full-length photo: oval matches the photo's 2:3 shape so head and feet stay in view */
+.art.tall { aspect-ratio: 2 / 3; }
 
 /* ===== References ===== */
 .refs-banner { position: relative; border-radius: 28px; overflow: hidden; height: 240px; margin-bottom: 44px; box-shadow: var(--shadow); }
