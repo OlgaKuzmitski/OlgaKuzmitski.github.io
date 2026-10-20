@@ -55,7 +55,6 @@ img { display: block; max-width: 100%; }
   display: flex; align-items: center; gap: 10px;
   font-family: var(--heading-font); font-weight: 600; font-size: 24px; letter-spacing: -.3px;
 }
-.brand-name::before { content: ""; width: 14px; height: 14px; border-radius: 4px; background: var(--grad); transform: rotate(45deg); }
 .brand-tag { font-size: 15px; color: var(--ink-soft); }
 .brand-tag::before { content: "/"; margin-right: 8px; color: var(--line); }
 
