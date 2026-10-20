@@ -248,7 +248,7 @@ img { display: block; max-width: 100%; }
 .refs-banner img { width: 100%; height: 100%; object-fit: cover; }
 .refs-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(12,19,48,.55), rgba(12,19,48,0) 60%); }
 .refs-banner p { position: absolute; left: 40px; bottom: 34px; z-index: 1; color: var(--white); font: 600 24px/1.3 var(--heading-font); max-width: 380px; }
-.ref-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.ref-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .ref-card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px; transition: transform .3s, box-shadow .3s; }
 .ref-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 .ref-top { display: flex; gap: 14px; align-items: center; margin-bottom: 16px; }
